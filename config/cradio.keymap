@@ -22,54 +22,31 @@
             bindings = <&kp>, <&kp>;
         };
     };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-        combo_lctrl {
-            timeout-ms = <40>;
-            key-positions = <12 13>;
-            bindings = <&kp LCTRL>;
-        };
-    };
-};
-/ {
-    combos {
-        compatible = "zmk,combos";
+    
+        combos {
+            compatible = "zmk,combos";
+            combo_lctrl {
+                timeout-ms = <40>;
+                key-positions = <12 13>;
+                bindings = <&kp LCTRL>;
+            };
         combo_rctrl {
             timeout-ms = <40>;
             key-positions = <16 17>;
             bindings = <&kp RCTRL>;
         };
-    };
-};
-/ {
-    combos {
-        compatible = "zmk,combos";
         combo_ralt {
             timeout-ms = <40>;
-            key-positions = <17 18>;
+            key-positions = <18 19>;
             bindings = <&kp RALT>;
         };
-    };
-};
-/ {
-    combos {
-        compatible = "zmk,combos";
         combo_lgui {
             timeout-ms = <40>;
-            key-positions = <11 12>;
+            key-positions = <10 11>;
             bindings = <&kp LGUI>;
         };
-    };
-};
+        };
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
