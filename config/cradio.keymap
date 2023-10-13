@@ -22,7 +22,7 @@
             bindings = <&kp>, <&kp>;
         };
     };
-    
+
         combos {
             compatible = "zmk,combos";
             combo_lctrl {
@@ -37,12 +37,12 @@
         };
         combo_ralt {
             timeout-ms = <40>;
-            key-positions = <18 19>;
+            key-positions = <17 18>;
             bindings = <&kp RALT>;
         };
         combo_lgui {
             timeout-ms = <40>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
             bindings = <&kp LGUI>;
         };
         };
