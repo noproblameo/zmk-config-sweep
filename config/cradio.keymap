@@ -31,6 +31,45 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+        combo_lctrl {
+            timeout-ms = <40>;
+            key-positions = <12 13>;
+            bindings = <&kp LCTRL>;
+        };
+    };
+};
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_rctrl {
+            timeout-ms = <40>;
+            key-positions = <16 17>;
+            bindings = <&kp RCTRL>;
+        };
+    };
+};
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_ralt {
+            timeout-ms = <40>;
+            key-positions = <17 18>;
+            bindings = <&kp RALT>;
+        };
+    };
+};
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_lgui {
+            timeout-ms = <40>;
+            key-positions = <11 12>;
+            bindings = <&kp LGUI>;
+        };
+    };
+};
     keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -40,10 +79,10 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ ' "      │
-            HRML(A,        S,         D,         F)     &kp G          &kp H      HRMR(J,        K,         L,        SQT)
+            &kp A       &kp S      &kp D       &kp F     &kp G          &kp H      &kp J       &kp K     &kp L     &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &mt RALT COMMA  &mt RCTRL DOT    &kp FSLH
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M     &kp COMMA   &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &lt 2 BSPC  &mt LSHFT TAB     &mt RSHFT ENTER  &lt 1 SPACE
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
