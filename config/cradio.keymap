@@ -77,16 +77,16 @@
         right_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ [    ]   │  7       │  8       │  9       │          │   │ DELETE   │ PAGE DN  │ PAGE UP  │ END      │  -       │
+        //│ [    ]   │  7       │  8       │  9       │          │   │ DELETE   │ END      │ PAGE UP  │ PAGE DN  │  -       │
             &kp LBKT    &kp N7     &kp N8     &kp N9     &kp RBKT         &kp DEL    &kp PG_DN  &kp PG_UP  &kp END    &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CAPS     │  4       │  5       │  6       │          │   │  RSHFT   │ LEFT     │ DOWN     │ UP       │  RIGHT   │
-            &kp CAPS    &kp N4     &kp N5     &kp N6     &kp EQUAL    &kp RSHFT   &kp LARW   &kp DARW   &kp UARW   &kp RARW
+        //│ CAPS     │  4       │  5       │  6       │    =     │   │  RSHFT   │ LEFT     │   UP     │ DOWN     │  RIGHT   │
+            &kp CAPS    &kp N4     &kp N5     &kp N6    &kp EQUAL    &kp RSHFT   &kp LARW   &kp UARW  &kp DARW   &kp RARW
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ ESC      │  1       │  2       │  3       │  0       │   │          │          │          │          │          │
-           &kp ESC  &kp N1     &kp N2     &kp N3     &kp BSLH         &kp ENTER   &kp RCTRL &kp C_BRI_DEC &kp C_BRI_INC   &kp SEMI
+        //│ ESC      │  1       │  2       │  3       │     \    │   │          │          │          │          │          │
+           &kp ESC  &kp N1     &kp N2     &kp N3     &kp BSLH         &kp K_PREV  &kp C_PP &kp C_VOL_UP &kp C_VOL_DN  &kp C_NEXT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N0     &kp LGUI        &trans     &trans
+                                             &kp N0    &kp C_MUTE        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -94,16 +94,16 @@
         left_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  &       │  *       │          │          │   │          │          │          │          │          │
-            &kp UNDER   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR    &kp K_PREV  &kp C_VOL_DN   &kp C_VOL_UP   &kp C_PP   &kp C_NEXT
+        //│    _     │  &       │  *       │          │          │   │     _    │     *    │          │          │    -     │
+            &kp UNDER   &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR    &kp UNDER   &kp AMPS    &kp C_BRI_INC    &kp C_BRI_DEC  &kp MINUS
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  $       │  F5      │    ^     │          │   │  *       │  -       │          │          │  '       │
-            &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp RPAR      &kp ASTRK  &kp MINUS  &kp C_MUTE   &kp SEMI   &kp SQT
+        //│          │  $       │   %      │    ^     │    +     │   │          │    $     │   %      │    :     │     ;    │
+            &kp COLON  &kp DLLR   &kp PRCNT  &kp CARET  &kp PLUS      &kp PSCRN   &kp DLLR  &kp PRCNT   &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │   !      │    @     │    #     │          │   │  &       │  _       │  +       │  │       │    ~     │
-            &kp LBRC    &kp EXCL     &kp AT   &kp HASH &kp RBRC        &kp AMPS   &kp UNDER  &kp PLUS   &kp PIPE   &kp TILDE
+        //│          │   !      │    @     │    #     │          │   │     │    │    !     │     @    │    #     │    ~     │
+            &kp LBRC    &kp EXCL     &kp AT   &kp HASH &kp RBRC        &kp PIPE    &kp EXCL &kp AT      &kp HASH &kp TILDE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp RSHFT     &trans
+                                             &trans     &trans         &kp ENTER     &kp RSHFT
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
