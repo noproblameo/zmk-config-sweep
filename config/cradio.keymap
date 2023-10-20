@@ -103,7 +103,7 @@
         //│          │   !      │    @     │    #     │          │   │     │    │    !     │     @    │    #     │    ~     │
             &kp LBRC    &kp EXCL     &kp AT   &kp HASH &kp RBRC        &kp PIPE    &kp EXCL &kp AT      &kp HASH &kp TILDE
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp ENTER     &kp RSHFT
+                                             &trans     &trans         &kp RSHFT     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
