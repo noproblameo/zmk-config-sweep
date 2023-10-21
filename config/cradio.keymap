@@ -43,14 +43,14 @@
             key-positions = <16 17>;
             bindings = <&kp RCTRL>;
         };
-        combo_ralt {
-            timeout-ms = <40>;
-            key-positions = <6 7>;
-            bindings = <&kp RALT>;
-        };
-        combo_lgui {
+        combo_lalt {
             timeout-ms = <40>;
             key-positions = <2 3>;
+            bindings = <&kp RALT>;
+        };
+        combo_rgui {
+            timeout-ms = <40>;
+            key-positions = <6 7>;
             bindings = <&kp LGUI>;
         };
         };
