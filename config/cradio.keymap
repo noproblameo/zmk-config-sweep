@@ -39,7 +39,7 @@
         combo_lctrl {
             timeout-ms = <40>;
             key-positions = <12 13>;
-            bindings = <&kp LG(LCTRL)>;
+            bindings = <&kp LEFT_COMMAND>;
         };
 
         combo_rctrl {
@@ -51,13 +51,13 @@
         combo_lgui {
             timeout-ms = <40>;
             key-positions = <2 3>;
-            bindings = <&kp LC(LGUI)>;
+            bindings = <&kp LEFT_CONTROL>;
         };
 
         combo_rgui {
             timeout-ms = <40>;
             key-positions = <6 7>;
-            bindings = <&kp RC(RGUI)>;
+            bindings = <&kp RIGHT_CONTROL>;
         };
 
         combo_ralt {
